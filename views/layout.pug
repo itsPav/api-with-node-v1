@@ -1,13 +1,10 @@
 doctype html
 html(lang="en")
   head
-    title Flashcards
-    link(rel='stylesheet', href='/static/stylesheets/style.css')
+    link(rel='stylesheet', href='/css/global.css', type='text/css')
+    link(rel='stylesheet', href='/css/circle/core/docs.css', type='text/css')
+    title= title
   body
-    include includes/header.pug
-    if name
-      h2 Welcome, #{name}!
-      form(action="/goodbye", method="post")
-        button(type="submit") Goodbye
-    block content
-    include includes/footer.pug
+    include includes/header.pug 
+    include includes/body.pug 
+    include includes/footer.pug 
