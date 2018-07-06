@@ -5,7 +5,7 @@
                 h2 Timeline
         .grid-33
             .app--section--heading
-                strong= numFollowers
+                strong 129
                 h2 Following
         .grid-33
             .app--section--heading
@@ -13,9 +13,12 @@
     .grid-33
         .app--section
             ul.app--tweet--list
+                include tweet.pug
     .grid-33
         .app--section
-            ul.app--tweet--list
+            ul.app--user--list
+                include following.pug
     .grid-33
         .app--section
-            ul.app--message--list
+            ul.app--message--list   
+               include dm.pug   

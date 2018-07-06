@@ -1,8 +1,8 @@
-const pug = require('pug');
 const path = require('path');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const T = require('./js/config.js');
 
 // Set views path
 app.set('views', path.join(__dirname, 'views'));
@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
 
 app.get('/', function (req, res) {
-    res.render('layout', { title: 'Twitter Client', message: 'Hello there!' })
+    res.render('layout', { title: T.data , message: 'Hello there!' })
 })
 
 // Start server
