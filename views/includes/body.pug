@@ -5,20 +5,17 @@
                 h2 Timeline
         .grid-33
             .app--section--heading
-                strong 129
+                strong= numFollowing
                 h2 Following
         .grid-33
             .app--section--heading
                 h2 Direct Messages
     .grid-33
         .app--section
-            ul.app--tweet--list
-                include tweet.pug
+            include tweet.pug
     .grid-33
         .app--section
-            ul.app--user--list
-                include following.pug
+            include following.pug
     .grid-33
         .app--section
-            ul.app--message--list   
-               include dm.pug   
+            include dm.pug   

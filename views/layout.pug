@@ -5,6 +5,9 @@ html(lang="en")
     link(rel='stylesheet', href='/css/global.css', type='text/css')
     title= title
   body
-    include includes/header.pug 
-    include includes/footer.pug 
-    include includes/body.pug 
+    if dataReady
+      include includes/header.pug 
+      include includes/footer.pug 
+      include includes/body.pug 
+    else
+      include includes/error.pug

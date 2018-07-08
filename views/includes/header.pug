@@ -1,10 +1,9 @@
-header.circle--header
+header.circle--header(style=`background-image:url(${twitterHeader}`)
     .bounds
         .circle--fluid
             .circle--fluid--cell
-                a(href="index.html").logo
-                    img(src="")
-                    h1 @itsPav
+                a.logo(style=`background:url(${twitterURL}`)
+                    h1= `@${twitterName}`
             .circle--fluid--cell.align-right
                 nav
                     ul.circle--inline

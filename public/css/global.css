@@ -2115,7 +2115,11 @@ body {
 /* line 13, ../sass/global.sass */
 .logo {
   position: relative;
+
+  background-repeat: no-repeat;
+  background-size: auto;
 }
+
 /* line 15, ../sass/global.sass */
 .logo svg {
   float: left;
@@ -2125,6 +2129,7 @@ body {
 }
 /* line 20, ../sass/global.sass */
 .logo h1 {
+  padding-left: 30px;
   font-size: 1.8rem;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.5);
@@ -2490,6 +2495,10 @@ a:hover .app--avatar {
   background: #1da1f2 url("../images/message-tail-me.svg") no-repeat;
   left: auto;
   right: -8px;
+}
+
+.app--like svg {
+  padding-right: 7.5px;
 }
 
 /* line 272, ../sass/global.sass */
