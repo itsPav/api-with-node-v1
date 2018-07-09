@@ -2497,10 +2497,6 @@ a:hover .app--avatar {
   right: -8px;
 }
 
-.app--like svg {
-  padding-right: 7.5px;
-}
-
 /* line 272, ../sass/global.sass */
 .button,
 button,

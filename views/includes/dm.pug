@@ -9,10 +9,10 @@ ul.app--message--list
                             .app--avatar
                                 img(src= twitterURL)
                             p.app--message--text= `${val.message_create.message_data.text}`
-                            p.app--message--timestamp= Date.now() - `${val.created_timestamp}`
+                            p.app--message--timestamp= `${val.created_at}`
                     else
                         li.app--message
                             .app--avatar
                                 img(src= dm[0].rProfile_image_url)
                             p.app--message--text= `${val.message_create.message_data.text}`
-                            p.app--message--timestamp= Date.now() - `${val.created_timestamp}`
+                            p.app--message--timestamp= `${val.created_at}`

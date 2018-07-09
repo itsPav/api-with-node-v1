@@ -9,6 +9,8 @@ new Promise(function(resolve, reject) {
   })
 }).then(function(value) {
   value.forEach(element => {
+    // console.log(element);
+
     recentTweets.push(element);
   });
   return recentTweets;
