@@ -1,4 +1,3 @@
 .DS_Store
 .sass-cache
-public/js/config.js
 node_modules/*
