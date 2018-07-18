@@ -4,6 +4,8 @@ window.onload = function addStuff() {
     const button = document.querySelector('button');
     const msg = document.querySelector('textarea');
 
+    tweetULElement = document.getElementsByClassName('app--tweet--list')[0];
+
     button.addEventListener('click', function(e){
             socket.emit('tweet', msg.value);
             msg.value = "";

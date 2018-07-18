@@ -15,20 +15,17 @@ T.get('account/verify_credentials', { skip_status: true })
     // See https://github.com/ttezel/twit#tgetpath-params-callback
     // for details.
     twitterData.push(result.data);
-    
-    new Promise(function(resolve, reject) {
-      T.get('users/show', {q: `screen_name:${twitterData[0].screen_name}`, user_id:`${twitterData[0].id}`}, function(err, data, response) {
-        resolve(data);
-      })
-    }).then(function(value) {
-      personalData.push(value.name);
-      personalData.push(value.screen_name);
-      personalData.push(value.profile_image_url);
-      personalData.push(value.profile_banner_url);
-      personalData.push(value.friends_count);
-      personalData.push(value.id);
-      return personalData;
-    }).catch(err => console.log(err))
+    console.log(twitterData);
+
+    personalData.push(twitterData[0].name);
+    personalData.push(twitterData[0].screen_name);
+    personalData.push(twitterData[0].profile_image_url);
+    personalData.push(twitterData[0].profile_banner_url);
+    personalData.push(twitterData[0].friends_count);
+    personalData.push(twitterData[0].id);
+
+    console.log(personalData);
+    return personalData;
     
 })
 

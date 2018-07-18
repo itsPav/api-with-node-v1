@@ -34,6 +34,7 @@ io.on('connection', function(socket){
         // to the callback.
         // See https://github.com/ttezel/twit#tgetpath-params-callback
         // for details.
+        console.log(result.data);
         twitterData.push(result.data);
 
         T.post('statuses/update', { status: msg }, function(err, data, response) {
